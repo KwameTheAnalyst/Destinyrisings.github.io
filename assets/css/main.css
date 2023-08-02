@@ -1,0 +1,468 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+
+/*
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* 
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;}
+	*/
+
+/* main.css */
+
+/* General Styles */
+
+/* main.css */
+
+/* General Styles */
+
+/* main.css */
+
+/* General Styles */
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	line-height: 1.6;
+	color: #222; /* Black text color */
+	background-color: #f6f3ea; /* Creamy white background color */
+}
+
+a {
+	color: #3498db; /* Blue link color */
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ffa500; /* Gold link color on hover */
+}
+
+/* Header */
+
+#header {
+	padding: 1.5em 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 1000;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #header .logo {
+	font-size: 1.5em;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  #header .logo:hover {
+	color: #f1c40f;
+  }
+  
+  #header nav {
+	display: inline-block;
+	vertical-align: middle;
+  }
+  
+  #header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  
+  #header nav li {
+	display: inline-block;
+	margin-left: 2em;
+  }
+  
+  #header nav a {
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  #header nav a:hover {
+	color: #f1c40f;
+  }
+
+  
+#menu-button:hover {
+	background: rgba(255, 255, 255, 0.25); /* Add a background on hover */
+}
+  
+
+/* Navigation */
+
+/* #wrapper Section */
+#wrapper {
+	overflow-x: hidden; /* Hide horizontal overflow */
+  }
+  
+/* #nav Section */
+#nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 0; /* Start with the menu hidden off-screen */
+	height: 100%;
+	/* background: linear-gradient(to right, #005aff, #ffd700, #ffffff, #000000); */
+	background-color: #3498db;
+	padding-top: 2.5em;
+	padding-right: 1em;
+	z-index: 1001;
+	overflow-y: auto;
+	transition: width 0.3s ease-in-out;
+	display: none; /* Hide the menu initially */
+
+	/* Set the maximum height for the opened menu */
+	max-height: 40%;
+
+	/* Set the maximum width for the opened menu */
+	max-width: 250px;
+}
+
+/* Menu Items */
+#nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+#nav li {
+	margin-bottom: 1em; /* Add some space between menu items */
+	border-bottom: 1px solid #fff; /* Add a horizontal line to separate menu items */
+	padding-bottom: 0.5em; /* Adjust the spacing around the line */
+}
+
+#nav li:last-child {
+	margin-bottom: 0; /* Remove bottom margin for the last menu item */
+	border-bottom: none; /* Remove the line from the last menu item */
+}
+  
+
+/* Adjust the width based on the viewport size */
+@media screen and (max-width: 768px) {
+#nav {
+	max-width: 200px;
+}
+}
+
+@media screen and (max-width: 480px) {
+#nav {
+	max-width: 150px;
+}
+}
+  
+
+
+  
+  /* Show the menu when the 'navPanel-visible' class is applied */
+body.navPanel-visible #nav {
+	width: 250px;
+	display: block;
+}
+  
+  
+#nav.visible {
+	width: 250px; /* Set the desired width when the 'visible' class is applied */
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav li {
+    margin: 0;
+    padding: 0;
+}
+
+#nav a {
+    display: block;
+    color: #fff;
+    padding: 0.5em 1em;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+#nav a:hover {
+    color: #000;
+    background-color: #f8c50d;
+}
+
+/* #navPanelToggle (Menu Button) */
+
+  
+#navPanelToggle:hover {
+	background: rgba(255, 255, 255, 0.35);
+}
+  
+
+/* Intro Section */
+
+#intro {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	padding: 5em 0;
+	/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+	text-align: center;
+	color: #e4c205;
+}
+
+#intro .inner {
+	position: relative;
+	max-width: 600px;
+	margin: 0 auto;
+  }
+
+#intro h1 {
+	font-size: 3em;
+	font-weight: 700;
+	margin-bottom: 1em;
+}
+
+#intro p {
+	font-size: 1.25em;
+	margin-bottom: 2em;
+	line-height: 1.6;
+	color: #000;
+}
+
+#intro .social-icons {
+	position: absolute;
+	bottom: 2em;
+	right: 2em;
+	display: flex;
+	align-items: center;
+}
+
+#intro .social-icons li {
+margin-right: 1em;
+color: #faf9f9;
+}
+
+#intro .social-icons li:last-child {
+margin-right: 0;
+}
+
+/* Social Icons (Bottom) */
+.social-icons-bottom {
+	position:fixed;
+	bottom: 2em;
+	right: 2em;
+	display: flex;
+	align-items: center;
+	z-index: 1000;
+  }
+  
+  .social-icons-bottom li {
+	margin-right: 1em;
+  }
+  
+  .social-icons-bottom li:last-child {
+	margin-right: 0;
+  }
+
+/* Section Headings */
+
+.major h2 {
+	font-size: 2.5em;
+	margin-bottom: 1.5em;
+	color: #222; /* Black text color */
+}
+
+/* Main Section - Posts */
+#main .posts {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2em;
+  }
+  
+  #main .post {
+	padding: 2em;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+  }
+  
+  #main .post header {
+	margin-bottom: 1.5em;
+  }
+  
+  #main .post header h2 {
+	font-size: 1.5em;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+  }
+  
+  #main .post header .date {
+	color: #888;
+  }
+  
+  #main .post .image {
+	display: block;
+	margin-bottom: 1.5em;
+  }
+  
+  #main .post .image img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 5px;
+  }
+  
+  #main .post p {
+	font-size: 1.1em;
+	line-height: 1.6;
+	margin-bottom: 1.5em;
+  }
+  
+  #main .post .actions {
+	text-align: right;
+  }
+  
+  #main .post .actions a {
+	font-size: 1em;
+	color: #f1c40f;
+	text-decoration: none;
+  }
+  
+  #main .post .actions a:hover {
+	color: #e67e22;
+  }
+
+  #main .post ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  #main .post li {
+	margin-bottom: 0.5em; /* Add some space between list items */
+	padding: 0.2em 0; /* Adjust the vertical spacing */
+	border-bottom: 1px solid #ccc; /* Add a horizontal line to separate list items */
+  }
+  
+  #main .post li:last-child {
+	margin-bottom: 0; /* Remove bottom margin for the last list item */
+	border-bottom: none; /* Remove the line from the last list item */
+  }
+
+
+
+  /* Order Now and Contact Us Sections */
+#order ul,
+#contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#order li,
+#contact li {
+  margin-bottom: 0.5em; /* Add some space between list items */
+  padding: 0.2em 0; /* Adjust the vertical spacing */
+}
+
+
+/* Buttons */
+
+.button {
+	background-color: #3498db; /* Blue button color */
+	color: #f6f3ea; /* Creamy white text color */
+	padding: 0.8em 1.5em;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	overflow: hidden; /* Add this line to clip text overflow */
+}
+
+.button:hover {
+	background-color: #ffa500; /* Gold button color on hover */
+	color: #f6f3ea; /* Creamy white text color on hover */
+}
+
+.button.large {
+	font-size: 1.2em;
+}
+
+
+
+/* Footer */
+
+#footer {
+	background-color: #333;
+	color: #fff;
+	padding: 2em 0;
+	text-align: center;
+}
+
+#footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#footer li {
+	margin: 0 1em;
+}
+
+#footer ul li:first-child {
+	margin-left: 0;
+  }
+  
+  #footer ul li:last-child {
+	margin-right: 0;
+  }
+  
+  #footer ul li a {
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  #footer ul li a:hover {
+	color: #f1c40f;
+  }
+
+/* Media Queries */
+
+@media (max-width: 980px) {
+	#intro h1 {
+		font-size: 2.5em;
+	}
+}
+
+@media (max-width: 736px) {
+	#intro h1 {
+		font-size: 2em;
+	}
+}
